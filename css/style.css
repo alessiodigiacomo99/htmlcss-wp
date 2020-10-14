@@ -8,53 +8,58 @@ body{
   background-image: url("https://s0.wp.com/wp-content/themes/premium/natural/images/natural-default-pattern.png");
   width: 70%;
   margin: auto;
+  font-family: 'Roboto', sans-serif;
 }
+
 /* utility class */
+
 .float_left{
   float: left;
 }
 
-.float_right{
-  float: right;
-}
-
 .bg_white{
   background-color: white;
-  margin: 5px;
+  border-radius: 5px;
 }
 
-/* /utility class */
+/* header */
 
-h2{
-  text-transform: uppercase;
-  font-style: italic;
-  font-size: 20px;
-}
 .sfondo_natural{
-  height: 300px;
-  position: relative;
   width: 100%;
-  background-image: url("https://s0.wp.com/wp-content/themes/premium/natural/images/natural-default-header.jpg");
+  height: 300px;
+  background-image: url("../img/header_bg.jpg");
   background-size: cover;
   margin-top: 10px;
   border: 10px solid white;
   cursor: pointer;
+  position: relative;
 }
 
 .logo_natural{
-  height: 20vh;
-  width: 20vw;
-  background-image: url("https://naturaldemo.files.wordpress.com/2016/07/natural-logo.png?w=698");
-  background-size: cover;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.logo_natural img{
+  width: 40%;
+}
+
+.logo_natural h1{
+  width: 100%;
+  font-size: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
 }
 
 nav{
   background-color: rgb(80, 71, 65);
 }
+
 .nav_bar{
   width: 65%;
   margin: auto;
@@ -79,40 +84,76 @@ nav{
 ul li:hover{
   background-color: #302b27;
   cursor: pointer;
+  text-decoration: underline;
 }
 
+/* main */
+main{
+  margin: 10px 0;
+}
+
+.fa-rss-square{
+  color: orange;
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.bg_white h2{
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 25px;
+  width: 60%;
+}
+
+#aside_sinistra h2:after{
+  content: "";
+  display: table;
+  clear: both;
+}
 #aside_sinistra,section{
-  width: 26%;
+  width: 25%;
 }
 
-a{
+#aside_destra, #aside_sotto{
+  margin-bottom: 10px;
+  line-height: 1.5em;
+}
+
+#main_content{
+  width: 40%;
+  margin: 0 5%;
+}
+
+#aside_sinistra a{
   width: 100%;
   display: inline-block;
   color: green;
   text-decoration: none;
 }
 
-#main_content{
-  width: 45%;
+#aside_sinistra a:hover{
+  text-decoration: underline;
 }
 
 #main_content p, #aside_destra p, a, #aside_sotto p{
   padding: 5px;
 }
 
-.fine::after{
+main::after{
   content: "";
   display: table;
   clear: both;
 }
 
+/* footer */
+
 #site_footer{
-  width: 99%;
-  height: 20vh;
-  position: relative;
+  width: 100%;
+  height: 20%;
 }
 
-i{
+.icone i{
+  margin-top: 10px;
   font-size: 100px;
   width: 33.333%;
   text-align: center;
@@ -131,7 +172,7 @@ i{
   color: lightblue;
 }
 
- .icone::after{
+.icone::after{
   content: "";
   display: table;
   clear: both;
