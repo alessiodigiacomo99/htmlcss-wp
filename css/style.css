@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("https://s0.wp.com/wp-content/themes/premium/natural/images/natural-default-pattern.png");
+  width: 70%;
+  margin: auto;
+}
+/* utility class */
+.float_left{
+  float: left;
+}
+
+.float_right{
+  float: right;
+}
+
+.bg_white{
+  background-color: white;
+  margin: 5px;
+}
+
+/* /utility class */
+
+h2{
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 20px;
+}
+.sfondo_natural{
+  height: 300px;
+  position: relative;
+  width: 100%;
+  background-image: url("https://s0.wp.com/wp-content/themes/premium/natural/images/natural-default-header.jpg");
+  background-size: cover;
+  margin-top: 10px;
+  border: 10px solid white;
+  cursor: pointer;
+}
+
+.logo_natural{
+  height: 20vh;
+  width: 20vw;
+  background-image: url("https://naturaldemo.files.wordpress.com/2016/07/natural-logo.png?w=698");
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+nav{
+  background-color: rgb(80, 71, 65);
+}
+.nav_bar{
+  width: 65%;
+  margin: auto;
+}
+
+.nav_bar::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav_bar ul li{
+  float: left;
+  list-style: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 5px;
+  font-weight: 800;
+  border-left: 2px solid #302b27;
+}
+
+ul li:hover{
+  background-color: #302b27;
+  cursor: pointer;
+}
+
+#aside_sinistra,section{
+  width: 26%;
+}
+
+a{
+  width: 100%;
+  display: inline-block;
+  color: green;
+  text-decoration: none;
+}
+
+#main_content{
+  width: 45%;
+}
+
+#main_content p, #aside_destra p, a, #aside_sotto p{
+  padding: 5px;
+}
+
+.fine::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#site_footer{
+  width: 99%;
+  height: 20vh;
+  position: relative;
+}
+
+i{
+  font-size: 100px;
+  width: 33.333%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fa-facebook-square:hover{
+  color: blue;
+}
+
+.fa-instagram:hover{
+  color: pink;
+}
+
+.fa-twitter:hover{
+  color: lightblue;
+}
+
+ .icone::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h3{
+  text-align: center;
+  color: grey;
+  font-style: italic;
+  text-transform: capitalize;
+}
